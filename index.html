@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>TCC – Trabalho de Conclusão de Curso | CECIA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cecia-red: #8b0000;
+  --text: #222;
+  --blue1: #007cf0;
+  --blue2: #00dfd8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  background: #fff;
+  color: var(--text);
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--cecia-red);
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.header img { height: 90px; }
+
+.title { text-align: center; }
+
+.course {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--blue1), var(--blue2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cecia {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.ufsj {
+  font-size: 14px;
+  color: #eee;
+}
+
+/* ===== CONTEÚDO ===== */
+.main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* ===== TEXTO ===== */
+.datas {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* ===== BLOCOS ===== */
+.folder {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.folder-header {
+  padding: 14px 18px;
+  background: var(--cecia-red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder-content {
+  display: block; /* expandido por padrão */
+  padding: 12px 20px 18px;
+}
+
+.file {
+  padding: 6px 0;
+}
+
+.file a {
+  color: #0047ab;
+  text-decoration: none;
+}
+
+.file a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin: 60px 0 30px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="https://cecia.ufsj.edu.br/" style="text-decoration:none; color:inherit;">
+  <div class="header">
+    <div class="header-inner">
+      <img src="https://cecia.ufsj.edu.br/assets/logo-ufsj-D8UfR3Y2.png" alt="UFSJ">
+
+      <div class="title">
+        <div class="course">Engenharia da Computação e Inteligência Artificial</div>
+        <div class="cecia">CECIA</div>
+        <div class="ufsj">Universidade Federal de São João del-Rei – UFSJ</div>
+      </div>
+
+      <img src="https://cecia.ufsj.edu.br/assets/mascote-labs-XYBaCOvj.png" alt="CECIA">
+    </div>
+  </div>
+</a>
+
+<div class="main">
+
+<!-- ===== TEXTO INSTITUCIONAL ===== -->
+<div class="datas">
+O <strong>Trabalho de Conclusão de Curso (TCC)</strong> tem por objetivo consolidar
+a contribuição individual do(a) discente ao conhecimento sistematizado em
+<strong>Engenharia da Computação e Inteligência Artificial</strong>. As principais
+informações encontram-se a seguir:<br><br>
+
+• O(a) discente deverá redigir uma monografia final de curso sobre uma atividade
+prática ou teórica de seu interesse;<br>
+• A atividade deverá ser orientada por um docente do Curso de Engenharia da
+Computação e IA ou de áreas afins;<br>
+• No caso de atividades desenvolvidas em empresas, indústrias ou em laboratórios
+externos ao Campus Alto Paraopeba/UFSJ, o(a) professor(a) orientador(a) poderá
+indicar um(a) profissional coorientador(a);<br>
+• A monografia poderá ser redigida na forma de um artigo científico, segundo as
+normas da ABNT para elaboração de trabalhos científicos e demais normas definidas
+pelo Colegiado do Curso;<br>
+• <strong>Poderão ser aproveitados trabalhos acadêmicos já publicados</strong>,
+desde que em conformidade com o <strong>Projeto Pedagógico do Curso</strong> e
+com as <strong>definições e deliberações do Colegiado do Curso</strong>;<br>
+• O(a) aluno(a) deverá apresentar seu trabalho a uma banca examinadora constituída
+por três docentes, sendo um deles o(a) orientador(a);<br>
+• Para se inscrever nesta unidade curricular, o(a) discente deverá ter cumprido
+o mínimo de <strong>1980 horas-aula</strong> do curso de Engenharia da Computação
+e IA;<br>
+• A partir do segundo semestre de 2023, o TCC deverá ser desenvolvido
+<strong>individualmente</strong>, conforme o Artigo 58 da Resolução nº 34/2021 do
+CONEP;<br>
+• O(a) discente deverá solicitar matrícula em TCC por meio do
+<strong>Requerimento Eletrônico</strong>, disponível na página do curso. A
+efetivação da matrícula ocorrerá após a confirmação de orientação pelo(a)
+docente indicado(a).
+</div>
+
+<div class="datas">
+<strong>Instruções ao(à) Docente Orientador(a)</strong><br><br>
+
+1) As bancas examinadoras deverão ser cadastradas no
+<strong>Sistema Integrado de Gestão de Atividades Acadêmicas (SIGAA)</strong>;<br>
+2) Caberá ao(à) docente orientador(a) encerrar a nota do(a) discente no SIGAA;<br>
+3) Os trabalhos finais, revisados e aprovados, deverão ser enviados para
+<strong>cecia@ufsj.edu.br</strong> para posterior publicação na página do Curso de
+Engenharia da Computação e IA;<br>
+4) Somente após o envio do trabalho final, devidamente revisado, aprovado e
+assinado pelo(a) orientador(a) e pelo(a) orientando(a), bem como da Ata de Defesa,
+a nota será consolidada no SIGAA pela Coordenação de Curso.
+</div>
+
+<h2>Documentos e Normas – TCC</h2>
+<div id="tcc">Carregando documentos do TCC...</div>
+
+</div>
+
+<!-- ================= TCC (GOOGLE DRIVE) ================= -->
+<script>
+const API_KEY = "AIzaSyACMK-L2y2-ZyJkwSkuu992Zug1dPFZgQM";
+const ROOT_FOLDER_TCC = "1shvw9o9qhXyUEO_SV4efyXJFGvyQpwwh";
+
+async function driveApi(q) {
+  const url =
+    `https://www.googleapis.com/drive/v3/files?q=${encodeURIComponent(q)}&fields=files(id,name,mimeType)&supportsAllDrives=true&includeItemsFromAllDrives=true&key=${API_KEY}`;
+  const r = await fetch(url);
+  return (await r.json()).files || [];
+}
+
+async function carregarTCC() {
+  const container = document.getElementById("tcc");
+  container.innerHTML = "";
+
+  let pastas = await driveApi(
+    `'${ROOT_FOLDER_TCC}' in parents and mimeType='application/vnd.google-apps.folder'`
+  );
+
+  pastas.sort((a,b) =>
+    a.name.localeCompare(b.name, "pt-BR", { sensitivity: "base" })
+  );
+
+  pastas.forEach(async (pasta) => {
+    const box = document.createElement("div");
+    box.className = "folder";
+
+    const h = document.createElement("div");
+    h.className = "folder-header";
+    h.innerHTML = `📁 ${pasta.name} <span>▼</span>`;
+
+    const c = document.createElement("div");
+    c.className = "folder-content";
+    c.style.display = "block";
+
+    const arquivos = await driveApi(
+      `'${pasta.id}' in parents and mimeType!='application/vnd.google-apps.folder'`
+    );
+
+    arquivos
+      .sort((a,b)=>a.name.localeCompare(b.name,"pt-BR",{sensitivity:"base"}))
+      .forEach(a => {
+        c.innerHTML += `
+          <div class="file">
+            📄 <a target="_blank" href="https://drive.google.com/file/d/${a.id}/view">${a.name}</a>
+          </div>`;
+      });
+
+    box.appendChild(h);
+    box.appendChild(c);
+    container.appendChild(box);
+  });
+}
+
+carregarTCC();
+</script>
+
+<!-- ================= DATA DE ATUALIZAÇÃO ================= -->
+<script>
+const DOC_DATA_ATUALIZACAO =
+  "https://docs.google.com/document/d/1L-MM4FhPUCZa3Gh9B2ZHlGKUW-4fGQNE/export?format=txt";
+
+async function carregarDataAtualizacao() {
+  try {
+    const res = await fetch(DOC_DATA_ATUALIZACAO);
+    let texto = (await res.text()).trim();
+    texto = texto.split(/\r?\n/).filter(l => l.trim()).join(" ");
+    document.getElementById("data-atualizacao").innerHTML =
+      "<strong>Última atualização:</strong> " + texto;
+  } catch {
+    document.getElementById("data-atualizacao").textContent =
+      "Última atualização: informação indisponível.";
+  }
+}
+
+carregarDataAtualizacao();
+</script>
+
+<div class="footer">
+  Página institucional mantida pela Coordenação do Curso – CECIA / UFSJ.<br>
+  <span id="data-atualizacao">Carregando data da última atualização...</span>
+</div>
+
+</body>
+</html>
