@@ -392,9 +392,18 @@ async function carregarTCC() {
     h.className = "folder-header";
     h.innerHTML = `📁 ${pasta.name} <span>▼</span>`;
 
+    h.addEventListener("click", () => {
+  box.classList.toggle("open");
+
+  const icon = h.querySelector("span");
+  if (icon) {
+    icon.textContent = box.classList.contains("open") ? "▲" : "▼";
+  }
+});
+
+
     const c = document.createElement("div");
     c.className = "folder-content";
-    c.style.display = "block";
 
     const arquivos = await driveApi(
       `'${pasta.id}' in parents and mimeType!='application/vnd.google-apps.folder'`
